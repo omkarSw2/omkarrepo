@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  color: dodgerblue;
+  height: 60px;
+  background-color: beige;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+#card {
+  margin: 10px;
+  display: flex;
+  margin: auto;
+
+}
+#card-img > img {
+  justify-content: center;
+  width: 500px;
+}
+#card-img {
+  justify-content: center;
+  width: 500px;
+  padding: 10px;
+}
