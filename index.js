@@ -49,18 +49,10 @@ function display() {
   main.innerHTML = cardsdata.join("");
 }
 async function handleClick(imageUrl) {
-  let singleimg = (await JSON.parse(localStorage.getItem("singleimg"))) || [];
-  singleimg.push(imageUrl);
+  let singleimg = [imageUrl];
   localStorage.setItem("singleimg", JSON.stringify(singleimg));
-
   window.location.href = "./catpage_page/cat_page.html";
 }
-// async function handleClick(image) {
-//   favrateImg = (await JSON.parse(localStorage.getItem("favrate"))) || [];
-//   favrateImg.push(image);
-//   await localStorage.setItem("favrate", JSON.stringify(favrateImg));
-//   alert("Adede to the favraite ");
-// }
 
 function Increment() {
   page++;
